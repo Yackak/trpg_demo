@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>턴제 RPG</title>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container"></div>
+
+  <div id="ui">
+    <div id="skill-panel">
+      <div class="skill-select">
+        <h4>전사</h4>
+        <button onclick="selectSkill('player1', '공격')">공격</button>
+        <button onclick="selectSkill('player1', '회복')">회복</button>
+      </div>
+      <div class="skill-select">
+        <h4>드래곤</h4>
+        <button onclick="selectSkill('player2', '공격')">공격</button>
+        <button onclick="selectSkill('player2', '회복')">회복</button>
+      </div>
+      <div class="skill-select">
+        <h4>마녀</h4>
+        <button onclick="selectSkill('player3', '공격')">공격</button>
+        <button onclick="selectSkill('player3', '회복')">회복</button>
+      </div>
+      <div class="skill-select">
+        <h4>소환사</h4>
+        <button onclick="selectSkill('player4', '공격')">공격</button>
+        <button onclick="selectSkill('player4', '회복')">회복</button>
+      </div>
+    </div>
+
+    <button id="end-turn" onclick="endTurn()">턴 종료</button>
+
+    <div id="skill-summary"></div>
+    <div id="log"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
